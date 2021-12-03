@@ -1,7 +1,7 @@
 Model public_activities {
   type: 'table'
   label: 'Activities'
-  description: '11'
+  description: '12'
   data_source_name: 'development'
   dimension created_at {
     label: 'Created At'
