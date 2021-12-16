@@ -2,8 +2,8 @@ import '../public_activities.model.aml' {
   public_activities as model__public_activities
 }
 
-Dataset activities {
-  label: 'Activities'
+Dataset activitiesne {
+  label: 'Activitiesne'
   description: ''
   data_source_name: 'development'
   models: [

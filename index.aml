@@ -2,4 +2,4 @@
 //--------------------------------------------
 // test commit on dev
 // Add a dataset named "ecommerce_details" in "ecommerce.dataset.aml" file to "index.aml" file
-import './dataset/activities.dataset.aml' { activities }
+import './dataset/activities.dataset.aml' { activitiesne }
