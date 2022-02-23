@@ -3,7 +3,7 @@ import '../public_activities.model.aml' {
 }
 
 Dataset activitiesne {
-  label: 'Activitiesne12'
+  label: 'Activitiesne123'
   description: "# Holistics\n\n[![CircleCI](https://circleci.com/gh/holistics/holistics/tree/master.svg?style=svg&circle-token=e4784764d271cd806fbd61533f62c91e801db277)](https://circleci.com/gh/holistics/holistics/tree/master)Internal data reporting and DW management software\n## Requirements\n### Ruby and Rails\nPlease follow this guide (https://gorails.com/setup/) with your choice of OS. Holistics' current Ruby version is **2.7.4**\n### MacOS\nPostgres: ~Best is to use [PostgresApp](http://postgresapp.com/)~ `brew install postgresql@11`Redis: `brew install redis`MySQL (for testWRT the ranges, it’s fine to hard code them once off, but over time the data may shift such that the hard coded values no longer useful (e.g. data values move higher). This would mean constant tinkering with the range boundaries.WRT the ranges, it’s fine to hard code them once off, but over time the data may shift such that the hard coded values no longer useful (e.g. data values move higher). This would mean constant tinkering with the range boundaries.  \n"
   data_source_name: 'development'
   models: [
