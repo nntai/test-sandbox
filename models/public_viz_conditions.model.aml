@@ -11,7 +11,7 @@ Model public_viz_conditions {
   }
   dimension condition {
     label: 'Condition'
-    type: 'composite'
+    type: 'text'
     hidden: false
     definition: @sql {{ #SOURCE.condition }};;
   }
@@ -29,7 +29,7 @@ Model public_viz_conditions {
   }
   dimension field_path {
     label: 'Field Path'
-    type: 'composite'
+    type: 'text'
     hidden: false
     definition: @sql {{ #SOURCE.field_path }};;
   }

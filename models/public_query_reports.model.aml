@@ -5,7 +5,7 @@ Model public_query_reports {
   data_source_name: 'development'
   dimension settings {
     label: 'Settings'
-    type: 'composite'
+    type: 'text'
     hidden: false
     definition: @sql {{ #SOURCE.settings }};;
   }

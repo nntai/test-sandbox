@@ -41,19 +41,19 @@ Model public_viz_settings {
   }
   dimension adhoc_fields {
     label: 'Adhoc Fields'
-    type: 'composite'
+    type: 'text'
     hidden: false
     definition: @sql {{ #SOURCE.adhoc_fields }};;
   }
   dimension fields {
     label: 'Fields'
-    type: 'composite'
+    type: 'text'
     hidden: false
     definition: @sql {{ #SOURCE.fields }};;
   }
   dimension filters {
     label: 'Filters'
-    type: 'composite'
+    type: 'text'
     hidden: false
     definition: @sql {{ #SOURCE.filters }};;
   }
@@ -65,13 +65,13 @@ Model public_viz_settings {
   }
   dimension settings {
     label: 'Settings'
-    type: 'composite'
+    type: 'text'
     hidden: false
     definition: @sql {{ #SOURCE.settings }};;
   }
   dimension format {
     label: 'Format'
-    type: 'composite'
+    type: 'text'
     hidden: false
     definition: @sql {{ #SOURCE.format }};;
   }
