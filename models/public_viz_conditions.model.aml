@@ -1,0 +1,75 @@
+Model public_viz_conditions {
+  type: 'table'
+  label: 'Viz Conditions'
+  description: ''
+  data_source_name: 'development'
+  dimension updated_at {
+    label: 'Updated At'
+    type: 'datetime'
+    hidden: false
+    definition: @sql {{ #SOURCE.updated_at }};;
+  }
+  dimension condition {
+    label: 'Condition'
+    type: 'composite'
+    hidden: false
+    definition: @sql {{ #SOURCE.condition }};;
+  }
+  dimension transformation {
+    label: 'Transformation'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.transformation }};;
+  }
+  dimension aggregation {
+    label: 'Aggregation'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.aggregation }};;
+  }
+  dimension field_path {
+    label: 'Field Path'
+    type: 'composite'
+    hidden: false
+    definition: @sql {{ #SOURCE.field_path }};;
+  }
+  dimension source_type {
+    label: 'Source Type'
+    type: 'text'
+    hidden: false
+    definition: @sql {{ #SOURCE.source_type }};;
+  }
+  dimension source_id {
+    label: 'Source Id'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.source_id }};;
+  }
+  dimension created_at {
+    label: 'Created At'
+    type: 'datetime'
+    hidden: false
+    definition: @sql {{ #SOURCE.created_at }};;
+  }
+  dimension user_id {
+    label: 'User Id'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.user_id }};;
+  }
+  dimension id {
+    label: 'Id'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.id }};;
+  }
+  dimension tenant_id {
+    label: 'Tenant Id'
+    type: 'number'
+    hidden: false
+    definition: @sql {{ #SOURCE.tenant_id }};;
+  }
+
+  owner: 'admin@domain.com'
+  table_name: '"public"."viz_conditions"'
+}
