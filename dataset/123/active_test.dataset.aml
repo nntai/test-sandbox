@@ -1,3 +1,9 @@
+import '../models/public_viz_conditions.model.aml' {
+  public_viz_conditions
+}
+import '../models/public_viz_settings.model.aml' {
+  public_viz_settings
+}
 import '../public_activities.model.aml' {
   public_activities as model__public_activities
 }
@@ -6,11 +12,8 @@ Dataset activitiesne {
   label: 'Activitiesne'
   description: "12"
   data_source_name: 'development'
-  models: [
-    model__public_activities
-  ]
+  models: [model__public_activities, public_viz_settings, public_viz_conditions]
   relationships: [
   ]
   owner: 'admin@domain.com'
 }
- 
